@@ -17,3 +17,18 @@
 [LaTex排版系统：TeX Live+Visual Studio Code的配置：](https://zhuanlan.zhihu.com/p/491581833)
 
 2、overleaf.无需配置环境，但是由于毕业论文内容较多，免费版本编译时长受限，选择overleaf需要开会员。
+
+## 模板使用方法：
+1、封面
+2、摘要
+3、目录
+4、参考文献
+5、图、表、公式以及列举
+6、引用
+7、正文以及附录内容
+
+## LaTex 辅助网站：
+<https://www.latexlive.com/##>
+## 贡献者
+作者将本人自己的硕士论文latex完整项目上传，希望大家在此基础上修改比较方便，同时也希望各位user注意知识产权。
+  * [TianmingHuang](https://github.com/HuangTM23)
