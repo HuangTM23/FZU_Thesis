@@ -1,4 +1,4 @@
-# 福州大学硕士/博士学位论文LaTeX模板。
+# 福州大学硕士学位论文LaTeX模板。
 
 ## 致谢
 本LaTex模板由华南理工大学硕博士学位论文LaTeX模板修改而来。<https://github.com/mengchaoheng/SCUT_thesis/tree/master>
