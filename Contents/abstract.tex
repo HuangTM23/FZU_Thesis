@@ -1,0 +1,35 @@
+
+\begin{abstractCN}
+
+随着物联网 (IoT) 的快速发展，基于位置的服务变得越来越重要，尤其是在室内环境中，全球卫星导航系统 (GNSS) 信号受到墙壁的遮挡衰减严重，无法满足室内定位的需求。可见光定位 (VLP) 由于其精度高、成本低等优点，在多种室内定位技术中备受关注。特别是以图像传感器 (IS) 为接收端的可见光成像定位 (IS-VLP) 系统，由于 IS 的快速普及，有很大的市场潜力。然而，传统的 VLP 依赖于直接视距 (LOS) 路径，并且需要在有限的视场角内同时捕捉大量的发光二极管(LED) ，使其无法应对各种复杂多变的室内场景。 为了解决这两个主要的挑战，同时考虑到图像传感器的抗干扰性能更好，本文提出了一种仅需一个LED利用一次反射光进行定位的非视距可见光成像定位(NLOS IS-VLP)系统。
+
+本文所提出的NLOS IS-VLP 系统可分为两个模块，包括一个用于接收 LED 位置信息的非视距光学相机通信 (NLOS OCC) 系统和一个可见光成像定位 (IS-VLP) 系统。其中，NLOS OCC 系统是一种以IS为接收端基于NLOS链路的可见光通信(VLC)系统。IS-VLP 系统主要利用计算机视觉(CV)算法实现定位，在本文中主要是利用重投影误差最小化算法来实现位置估计的。
+
+
+本文给出了两种不同的NLOS IS-VLP系统实现方案。第一种方案提出了一种亮度分布模型，它可以用来表示一次反射光在图像传感器上的亮度分布情况，利用这种亮度分布模型，可以证明在仅有一个LED时，图像传感器上捕捉到的两个高光点可以被视为是两个虚拟的LED通过LOS在图像传感器上面的投影。其中，这两个虚拟LED的位置被证明是LED在反射面的投影和关于反射面的对称点。在得到LED的坐标和高光点的像素坐标之后，可以构建基于两个虚拟LED的LOS IS-VLP系统。第二种方案使用双目相机捕捉LED关于地面对称点，由于双目立体视觉算法可以实现在已知一个点在左右目图像上的像素坐标的情况下，计算其在相机坐标系的坐标，在惯性测量单元(IMU)的辅助下又可以获得相机的姿态。由此，很容易实现基于单灯的NLOS IS-VLP系统。
+
+本文通过实验，测试和分析了这两种方案的性能。并且总结了所提出的NLOS IS-VLP系统的待改进之处，同时也给出了后续改进的方法。最后，对VLP系统的发展进行了展望。
+ 
+\end{abstractCN}
+	
+
+\keywordsCN{室内定位；可见光通信；可见光定位；视距；非视距}
+
+
+\begin{abstractEN}
+
+With the rapid development of the Internet of Things (IoT), location-based services become more and more important, especially in indoor environments, where the Global Navigation Satellite System (GNSS) signals are severely attenuated by walls and cannot meet the needs of indoor positioning. Visible Light Positioning (VLP) has attracted much attention among various indoor positioning technologies due to its high accuracy and low cost, especially, the Image sensor (IS) based Visible Light positioning (IS-VLP) system.  It has great market potential due to the rapid popularization of IS. However, traditional VLP relies on  line-of-sight (LOS) path and requires capturing a large number of light-emitting diodes (LEDs) within a limited field of view, making it unable to cope with various complex and variable indoor scenarios. To address these two major challenges, considering the better interference resistance of IS, this paper proposes a non-line-of-sight (NLOS) IS-VLP  system that only requires a single LED to use the first reflected lights for positioning.
+
+The NLOS IS-VLP system proposed in this paper can be divided into two modules, including a NLOS optical camera communication (OCC) system for receiving LED position information and a IS-VLP system. The NLOS OCC system is a visible light communication (VLC) system based on NLOS links with IS as the receiver. The IS-VLP system mainly uses computer vision (CV) algorithms to achieve positioning, which in this paper is mainly using the reprojection errors minimization algorithm to achieve position estimation.
+
+This paper presents two different schemes for implementing the NLOS IS-VLP system. The first scheme proposes a luminance distribution model (LDM), which can be used to describe the luminance distribution of the first reflected lights on the IS. Using this LDM, it can be proved that when there is only one LED, the two highlights captured on the IS can be regarded as the projections of two virtual LEDs on the IS through LOS. The positions of these two virtual LEDs are proved to be the projection of the LED on the reflective surface and its symmetrical point about the reflective surface. After obtaining the coordinates of the LED and the pixel coordinates of the two highlights, a LOS IS-VLP system based on the two virtual LEDs can be constructed. The second scheme uses a stereo camera to capture the symmetrical point of the LED about the ground. Since the stereo vision algorithm can calculate its coordinates in the camera coordinate system when the pixel coordinates of the symmetrical point  in the left and right images are known, and the camera pose can be obtained with the help of an inertial measurement unit (IMU). Thus, it is easy to implement the NLOS IS-VLP system based on a single LED.
+
+This paper tests and analyzes the performance of these two schemes through experiments. And summarizes the areas for improvement of the proposed NLOS IS-VLP system, and also gives the methods for subsequent improvement. Finally, it looks forward to the development of VLP system.
+
+
+
+\end{abstractEN}
+
+	
+
+\keywordsEN{\textbf{Indoor positioning; Visible light communication (VLC); Visible light positioning (VLP); Line-of-sight (LOS); Non-line-of-sight (NLOS)}}
