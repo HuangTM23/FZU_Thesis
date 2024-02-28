@@ -28,7 +28,6 @@
 摘要的标题注意需要在房租thesis.cls中修改，如：
 <!-- markdownlint-disable MD031 -->
 ```markdown
-```python
 %%%============================摘要及关键词========================%%%
 
 \newcommand{\abstractCN}[1]{
@@ -63,7 +62,7 @@
 
 4、参考文献
 
-参考文献自动生成，现在googlescholar上cite引文复制bib格式连接，粘贴在mybibfile2.bib文件里面，然后在正文处用语法\cite{}，括号里面是bib链接的名字。
+参考文献自动生成，现在googlescholar上cite引文复制bib格式连接，粘贴在mybibfile2.bib文件里面，然后在正文处用语法\cite{ }，括号里面是bib链接的名字。
 
 5、图、表、公式以及列举
 
@@ -71,7 +70,7 @@
 
 6、引用
 
-语法\ref{}。
+语法\ref{ }。
 
 7、正文以及附录内容
 
