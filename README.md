@@ -10,4 +10,5 @@
 
 ## 编译方法：
 1、VSCode+LaTeX Workshop插件,引擎用TeX Live。注意将`settings_files/settings.json`中的值直接覆盖`settings.json`文件的内容。编译选图中xelatexmk-bibtex-xelatexmk*2.
+
 ![image](https://github.com/HuangTM23/FZU_Thesis/assets/150235790/031d202f-2c08-45ec-abc2-7df6c754e6d8)
