@@ -395,7 +395,7 @@
 %------------------
 \renewcommand{\maketitle}{% called outside
        %% \includepdf[pages=-]{thesis_cover.pdf}%pdf文件路径为主文件tex或lyx的当前目录
-          \includepdf[pages={1-2}]{cover.pdf}
+          \includepdf[pages={1-2}]{thesis_cover.pdf}
 }
 
 %%%============================摘要及关键词========================%%%
