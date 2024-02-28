@@ -12,3 +12,8 @@
 1、VSCode+LaTeX Workshop插件,引擎用TeX Live。注意将`settings_files/settings.json`中的值直接覆盖`settings.json`文件的内容。编译选图中xelatexmk-bibtex-xelatexmk*2.
 
 ![image](https://github.com/HuangTM23/FZU_Thesis/assets/150235790/031d202f-2c08-45ec-abc2-7df6c754e6d8)
+
+环境配置：TeX Live+Visual Studio Code的配置
+[LaTex排版系统：TeX Live+Visual Studio Code的配置：](https://zhuanlan.zhihu.com/p/491581833)
+
+2、overleaf.无需配置环境，但是由于毕业论文内容较多，免费版本编译时长受限，选择overleaf需要开会员。
