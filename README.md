@@ -31,6 +31,8 @@
 
 2、摘要
 摘要的标题注意需要在fzuthesis.cls中修改，如：
+![1744708188603](https://github.com/user-attachments/assets/d802a5d7-9154-4b0c-84fa-ecdad3a8e225)
+
 <!-- markdownlint-disable MD031 -->
 ```markdown
 %%%============================摘要及关键词========================%%%
