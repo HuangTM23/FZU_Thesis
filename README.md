@@ -35,10 +35,14 @@
 
 <!-- markdownlint-disable MD031 -->
 ```markdown
-%%%============================摘要及关键词========================%%%
+\renewcommand{\maketitle}{% called outside
+       %% \includepdf[pages=-]{thesis_cover.pdf}%pdf文件路径为主文件tex或lyx的当前目录
+          \includepdf[pages={1-2}]{thesis_cover.pdf}
+}
 
+%%%============================摘要及关键词========================%%%
 \newcommand{\abstractCN}[1]{
-  \chapter[摘要]{\TitleinabstractCN{非视距可见光成像定位技术研究}} %这个位置修改摘要处的论文题目
+  \chapter[摘要]{\TitleinabstractCN{非视距可见光成像定位技术研究}}
     \begin{center}
     \absnamecn{中文摘要}
   \end{center}
@@ -48,7 +52,7 @@
     }
     
 \newcommand{\abstractEN}[1]{
-  \chapter[Abstract] {\TitleinabstractEN{RESEARCH ON NLOS IS-VLP TECHNOLOGY}} %这个位置修改摘要处的论文题目
+  \chapter[Abstract] {\TitleinabstractEN{RESEARCH ON NLOS IS-VLP TECHNOLOGY}}
     \begin{center}
     \absnameen{\textbf{Abstract}} 
   \end{center} 
