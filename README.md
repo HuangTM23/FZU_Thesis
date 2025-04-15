@@ -19,6 +19,8 @@
 2、overleaf.无需配置环境，但是由于毕业论文内容较多，免费版本编译时长受限，选择overleaf需要开会员。
 
 ## 模板文件结构
+![FZU_Thesis](https://github.com/user-attachments/assets/2fb51e84-5ec2-44a7-b37c-758fb3f012a8)
+
 
 
 ## 模板使用方法：
