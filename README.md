@@ -1,4 +1,4 @@
-# 福州大学硕士学位论文LaTeX模板。
+# 福州大学硕士学位论文/毕业论文LaTeX模板。
 
 ## 致谢
 本LaTex模板由华南理工大学硕博士学位论文LaTeX模板修改而来。<https://github.com/mengchaoheng/SCUT_thesis/tree/master>
@@ -25,7 +25,7 @@
 封面+独创性声明自己做好之后替换thesis_cover.pdf或者自己合并pdf.
 
 2、摘要
-摘要的标题注意需要在房租thesis.cls中修改，如：
+摘要的标题注意需要在fzuthesis.cls中修改，如：
 <!-- markdownlint-disable MD031 -->
 ```markdown
 %%%============================摘要及关键词========================%%%
