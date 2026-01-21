@@ -10,6 +10,19 @@
 %参考文献设置
 \usepackage[backend=biber,style=gb7714-2015,gbalign=gb7714-2015,gbpub=false,gbnamefmt = lowercase]{biblatex}
 \addbibresource[location=local]{mybibfile2.bib} % bib文件，由参考文献的BibTeX组成
+
+% 防止参考文献条目跨页显示 - 使用更强力的设置
+\usepackage{etoolbox}
+\AtBeginBibliography{%
+  \interlinepenalty=10000
+  \widowpenalty=10000
+  \clubpenalty=10000
+  \raggedbottom
+}
+
+% 为每个参考文献条目添加不分页保护
+\preto\bibitem{\par\penalty10000\relax}
+
 %页眉页脚设置
 \usepackage{fancyhdr}
 \usepackage{listings}
@@ -78,10 +91,20 @@
 	\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\include{Contents/conclusion} %结论
-	
-	\phantomsection % “目录”中的链接能正确跳转，需要添加 \phantomsection 否则点击参考文献会跳转到结论
-	\addcontentsline{toc}{chapter}{参考文献}	%目录中添加参考文献
-	\printbibliography	% 参考文献著录
+    
+    \clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{参考文献}
+
+% 设置参考文献不跨页
+\begingroup
+\interlinepenalty=10000
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+\printbibliography
+\endgroup
  	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  	% 只有一个附录
 % 	\include{appendix}
