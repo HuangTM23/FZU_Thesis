@@ -91,21 +91,13 @@
 	\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\include{Contents/conclusion} %结论
-    
-    \clearpage
-\phantomsection
-\addcontentsline{toc}{chapter}{参考文献}
 
-% 设置参考文献不跨页
-\begingroup
-\interlinepenalty=10000
-\clubpenalty=10000
-\widowpenalty=10000
-\displaywidowpenalty=10000
-\raggedbottom
-\printbibliography
-\endgroup
- 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\clearpage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{参考文献}
+	\printbibliography  % 参考文献著录
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  	% 只有一个附录
 % 	\include{appendix}
  	% 有多个附录

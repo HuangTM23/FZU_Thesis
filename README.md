@@ -1,5 +1,10 @@
 # 福州大学硕士学位论文/毕业论文LaTeX模板。
 
+## 最新更新
+ +修改参考文献跨页显示
+
+
+
 ## 致谢
 本LaTex模板由华南理工大学硕博士学位论文LaTeX模板修改而来。<https://github.com/mengchaoheng/SCUT_thesis/tree/master>
 
