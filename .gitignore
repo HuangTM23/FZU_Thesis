@@ -18,4 +18,5 @@ Thumbs.db
 
 # 编辑器
 .vscode/
-*.swp*.xdv
+*.swp
+*.xdv
